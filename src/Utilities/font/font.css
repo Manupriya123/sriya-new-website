@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Intro;
+    src: url(https://img.pristyncare.com/fonts-css-js-files%2Ffonts%2FIntroFont%2FFontfabric%20-%20Intro%20Regular.otf) format("opentype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: Intro;
+    src: url(https://img.pristyncare.com/fonts-css-js-files%2Ffonts%2FIntroFont%2FFontfabric%20-%20Intro%20SemiBold.otf) format("opentype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: Intro;
+    src: url(https://img.pristyncare.com/fonts-css-js-files%2Ffonts%2FIntroFont%2FFontfabric%20-%20Intro%20Bold.otf) format("opentype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: bold;
+  }
+  html,body, button, a, p, span {
+    font-family: Intro
+  }
