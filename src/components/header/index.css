@@ -10,6 +10,10 @@
     background:#fff;
 }
 
+.header-main-container{
+  position:sticky
+}
+
 .header-heading, .header-right{
     display: flex;
     justify-content: space-between;
