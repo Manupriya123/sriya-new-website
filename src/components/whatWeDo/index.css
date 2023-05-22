@@ -1,0 +1,15 @@
+.what-heading, .what-contact-btn{
+    color: #00263E;
+}
+
+.what-contact-btn{
+    font-size: 16px;
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+}
+
+.what-contact-btn .MuiSvgIcon-root{
+    font-size: 16px;
+    fill:#00263E;
+}
