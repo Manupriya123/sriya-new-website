@@ -41,7 +41,7 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div>
       <Toolbar />
-      <Divider />
+      {/* <Divider /> */}
 
       <List>
         <ListItem disablePadding>
