@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../../components/header";
 import HomeBanner from "../../components/homeBanner";
 import WhatWeDo from "../../components/whatWeDo";
-
 const Home = () => {
   let whatData = {
     heading: "What We Do",
@@ -14,6 +13,7 @@ const Home = () => {
       <Header />
       <HomeBanner />
       <WhatWeDo props={whatData} />
+      
     </div>
   );
 };
