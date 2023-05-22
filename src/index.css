@@ -12,6 +12,10 @@ a{
   text-decoration: none;
 }
 
+button{
+  cursor: pointer;
+}
+
 .container_wrapper{
   display: block;
   width: calc(min(1600px,90vw));
