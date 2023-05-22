@@ -1,4 +1,5 @@
-import * as React from "react";
+import React, { useState } from "react";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -27,23 +28,100 @@ function ResponsiveDrawer(props) {
     setMobileOpen(!mobileOpen);
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsOpen(false);
+  };
+
   const drawer = (
     <div>
       <Toolbar />
       <Divider />
+
       <List>
-        {["Platform", "UseCase", "About Us", "Resources", "Contact Us"].map(
-          (text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          )
-        )}
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemText primary={"Platform"} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <div
+            className="dropdown"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className="dropdown-button">
+              <p>UseCase</p>
+              <ArrowDropDownIcon />
+            </div>
+            {isOpen && (
+              <div className="dropdown-content">
+                <p>Markets</p>
+                <p>Use Case Builder</p>
+              </div>
+            )}
+          </div>
+        </ListItem>
+        <ListItem disablePadding>
+          <div
+            className="dropdown"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className="dropdown-button">
+              <p>About Us</p>
+              <ArrowDropDownIcon />
+            </div>
+            {isOpen && (
+              <div className="dropdown-content">
+                <p>Our History</p>
+                <p>Our Team</p>
+                <p>Our Marketplace</p>
+                <p>Our Vision</p>
+              </div>
+            )}
+          </div>
+        </ListItem>
+        <ListItem disablePadding>
+          <div
+            className="dropdown"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className="dropdown-button">
+              <p>Resources</p>
+              <ArrowDropDownIcon />
+            </div>
+            {isOpen && (
+              <div className="dropdown-content">
+                <p>Case Study</p>
+                <p>Article</p>
+                <p>Events</p>
+                <p>Academy</p>
+              </div>
+            )}
+          </div>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemText primary={"Contact US"} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemText primary={"Demo"} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemText primary={"Login"} />
+          </ListItemButton>
+        </ListItem>
       </List>
       {/* <Divider /> */}
     </div>
@@ -68,12 +146,17 @@ function ResponsiveDrawer(props) {
           ml: { sm: `${drawerWidth}px` },
         }}
       >
-        <Toolbar>
+        <Toolbar
+        // style={{
+        //   display: "flex",
+        //   justifyContent: "space-between",
+        // }}
+        >
           <IconButton
             aria-label="open drawer"
-            edge="end"
+            edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 1, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { sm: "none" } }}
           >
             <MenuIcon />
           </IconButton>

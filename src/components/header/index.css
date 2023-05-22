@@ -26,7 +26,8 @@
 
 .dropdown-button {
   color: black;
-  padding: 10px;
+  padding: 0px 15px;
+  margin: -5% auto;
   border: none;
   cursor: pointer;
   display: flex;
