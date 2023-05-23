@@ -9,7 +9,8 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
-import Hamburger from "../hamburger";
+
+import ResponsiveDrawer from "../hamburger";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -96,7 +97,7 @@ const Header = () => {
           <div>Login</div>
         </div>
         <div className="mobile-header">
-          <Hamburger/>
+          <ResponsiveDrawer />
         </div>
       </div>
     </div>
