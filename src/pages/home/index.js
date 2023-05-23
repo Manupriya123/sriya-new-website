@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../../components/header";
 import HomeBanner from "../../components/homeBanner";
 import WhatWeDo from "../../components/whatWeDo";
-import MainFooter from "../../components/footer"
+
+import MainFooter from "../../components/footer";
 const Home = () => {
   let whatData = {
     heading: "What We Do",
@@ -14,7 +15,7 @@ const Home = () => {
       <Header />
       <HomeBanner />
       <WhatWeDo props={whatData} />
-      <MainFooter/>
+      <MainFooter />
     </div>
   );
 };
