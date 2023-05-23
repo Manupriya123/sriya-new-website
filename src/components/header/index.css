@@ -5,21 +5,27 @@
   height: 66px;
   align-items: center;
   gap: 10px;
-  width: min(1600px, 90vw);
+  /* width: min(1600px, 90vw); */
+  width: 100%;
   margin: auto;
   background: #fff;
+  padding: 0 17px;
 }
 
-.header-main-container{
-  position:sticky
+.header-main-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 }
 
-.header-heading, .header-right{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    cursor:pointer
+.header-heading,
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
 }
 
 .dropdown {
