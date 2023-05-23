@@ -93,8 +93,12 @@ const Header = () => {
           <div>Contact</div>
         </div>
         <div className="header-right desktop-header">
-          <div>Demo</div>
-          <div>Login</div>
+          <a href="https://www.youtube.com/watch?v=M7lEGcdJNCA&t=236s/">
+            <div>Demo</div>
+          </a>
+          <a href="">
+            <div>Login</div>
+          </a>
         </div>
         <div className="mobile-header">
           <ResponsiveDrawer />

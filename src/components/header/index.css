@@ -26,6 +26,12 @@
   align-items: center;
   gap: 2rem;
   cursor: pointer;
+  color: #000;
+}
+
+.header-right a{
+  color: #000;
+
 }
 
 .dropdown {
@@ -55,6 +61,10 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.dropdown-content p{
+  font-size:14px;
 }
 
 .mobile-header {
