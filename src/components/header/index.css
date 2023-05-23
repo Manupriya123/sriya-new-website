@@ -10,6 +10,10 @@
   background: #fff;
 }
 
+.header-main-container {
+  position: sticky;
+}
+
 .header-heading,
 .header-right {
   display: flex;
@@ -62,7 +66,7 @@
   }
 
   .MuiPaper-root {
-    /* width: 100%; */
-    /* margin-top: 20%; */
+    width: 100%;
+    margin-top: 20%;
   }
 }

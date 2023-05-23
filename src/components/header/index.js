@@ -10,7 +10,7 @@ import {
   ListItemText,
 } from "@mui/material";
 
-import ResponsiveDrawer from "../hamburger";
+import OffcanvasExample from "../hamburger";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -97,7 +97,7 @@ const Header = () => {
           <div>Login</div>
         </div>
         <div className="mobile-header">
-          <ResponsiveDrawer />
+          <OffcanvasExample />
         </div>
       </div>
     </div>
