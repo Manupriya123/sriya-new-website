@@ -6,6 +6,7 @@ const Routeing = () => {
   return (
     <Routes>
       <Route path="/" component={Home} />
+      
     </Routes>
   );
 };

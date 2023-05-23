@@ -4,6 +4,7 @@ import HomeBanner from "../../components/homeBanner";
 import WhatWeDo from "../../components/whatWeDo";
 
 import MainFooter from "../../components/footer";
+import OurExpert from "../../components/ourExpert";
 const Home = () => {
   let whatData = {
     heading: "What We Do",
@@ -13,8 +14,9 @@ const Home = () => {
   return (
     <div>
       <Header />
-      {/* <HomeBanner /> */}
+      <HomeBanner />
       <WhatWeDo props={whatData} />
+      <OurExpert/>
       <MainFooter />
     </div>
   );

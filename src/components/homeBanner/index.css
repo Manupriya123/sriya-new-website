@@ -56,3 +56,17 @@
     background-color:#FBCEB1;
     box-shadow: 0px 2px 0px 0px #5300FF;
 }
+
+@media screen and (max-width:768px) {
+    .banner-sub-heading{
+        width: 100%;
+    }
+
+    .banner-btn-container{
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    /* .banner-heading */
+    
+}
