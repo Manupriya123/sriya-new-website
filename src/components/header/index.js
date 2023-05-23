@@ -45,7 +45,7 @@ const Header = () => {
           >
             <div className="dropdown-button">
               <p>UseCase</p>
-              <ArrowDropDownIcon />
+              <ArrowDropDownIcon style={{ marginBottom: "20%" }} />
             </div>
             {isOpen && (
               <div className="dropdown-content">
@@ -61,7 +61,7 @@ const Header = () => {
           >
             <div className="dropdown-button">
               <p>About Us</p>
-              <ArrowDropDownIcon />
+              <ArrowDropDownIcon style={{ marginBottom: "20%" }} />
             </div>
             {isOpen && (
               <div className="dropdown-content">
@@ -79,7 +79,7 @@ const Header = () => {
           >
             <div className="dropdown-button">
               <p>Resources</p>
-              <ArrowDropDownIcon />
+              <ArrowDropDownIcon style={{ marginBottom: "10%" }} />
             </div>
             {isOpen && (
               <div className="dropdown-content">
