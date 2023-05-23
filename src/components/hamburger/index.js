@@ -147,7 +147,6 @@ function ResponsiveDrawer(props) {
         }}
       >
         <Toolbar
-<<<<<<< HEAD
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -163,13 +162,7 @@ function ResponsiveDrawer(props) {
               />
             </a>
           </div>
-=======
-        // style={{
-        //   display: "flex",
-        //   justifyContent: "space-between",
-        // }}
-        >
->>>>>>> 709d50f36a6bfd8c31dce5da2f62e2999b859332
+
           <IconButton
             aria-label="open drawer"
             edge="start"
@@ -178,19 +171,6 @@ function ResponsiveDrawer(props) {
           >
             <MenuIcon />
           </IconButton>
-<<<<<<< HEAD
-=======
-          <div className="logo-container">
-            <a href="https://sriya.ai/">
-              <img
-                height="60"
-                width="130"
-                src="https://ml1ygrea7hcj.i.optimole.com/w:300/h:116/q:mauto/f:avif/https://sriya.ai/wp-content/uploads/2023/04/cropped-Color-logo-no-background-1.png"
-                alt="ariya.ai"
-              />
-            </a>
-          </div>
->>>>>>> 709d50f36a6bfd8c31dce5da2f62e2999b859332
         </Toolbar>
       </AppBar>
       <Box

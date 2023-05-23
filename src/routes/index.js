@@ -5,7 +5,7 @@ import Home from "../pages/home";
 const Routeing = () => {
   return (
     <Routes>
-      <Route path="/" component={Home} />
+      <Route path="/" element={<Home/>} />
     </Routes>
   );
 };
