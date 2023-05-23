@@ -5,6 +5,7 @@ import WhatWeDo from "../../components/whatWeDo";
 import MainFooter from "../../components/footer";
 import DownloadBrochure from "../../components/downloadBrochure";
 import DrSay from "../../components/srinivasSay";
+import WhySriya from "../../components/whySriya";
 const Home = () => {
   let whatData = {
     heading: "What We Do",
@@ -22,6 +23,7 @@ const Home = () => {
       <Header />
       <HomeBanner />
       <WhatWeDo props={whatData} />
+      <WhySriya/>
       <DrSay props={drSay} />
       <DownloadBrochure />
       <MainFooter />
