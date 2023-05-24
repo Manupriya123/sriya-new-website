@@ -29,9 +29,8 @@
   color: #000;
 }
 
-.header-right a{
+.header-right a {
   color: #000;
-
 }
 
 .dropdown {
@@ -63,9 +62,13 @@
   display: block;
 }
 
-.dropdown-content p{
-  font-size:14px;
+.dropdown-content p {
+  font-size: 14px;
   text-align: left;
+}
+
+.link-color {
+  color: #000;
 }
 
 .mobile-header {

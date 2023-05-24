@@ -11,6 +11,8 @@ import {
 } from "@mui/material";
 
 import ResponsiveDrawer from "../hamburger";
+import Market from "../../pages/market";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +51,9 @@ const Header = () => {
             </div>
             {isOpen && (
               <div className="dropdown-content">
-                <p>Markets</p>
+                <p>
+                  <Link className="link-color" to="/markets/"> Markets</Link>
+                </p>
                 <p>Use Case Builder</p>
               </div>
             )}
