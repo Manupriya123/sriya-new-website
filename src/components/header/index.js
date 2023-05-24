@@ -10,7 +10,13 @@ import {
   ListItemText,
 } from "@mui/material";
 
+<<<<<<< HEAD
 import OffcanvasExample from "../hamburger";
+=======
+import ResponsiveDrawer from "../hamburger";
+import Market from "../../pages/market";
+import { Link } from "react-router-dom";
+>>>>>>> 66ffede385d8986aa09863d659e7c8a79eaacd9b
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +55,9 @@ const Header = () => {
             </div>
             {isOpen && (
               <div className="dropdown-content">
-                <p>Markets</p>
+                <p>
+                  <Link className="link-color" to="/markets/"> Markets</Link>
+                </p>
                 <p>Use Case Builder</p>
               </div>
             )}
@@ -93,8 +101,12 @@ const Header = () => {
           <div>Contact</div>
         </div>
         <div className="header-right desktop-header">
-          <div>Demo</div>
-          <div>Login</div>
+          <a href="https://www.youtube.com/watch?v=M7lEGcdJNCA&t=236s/">
+            <div>Demo</div>
+          </a>
+          <a href="">
+            <div>Login</div>
+          </a>
         </div>
         <div className="mobile-header">
           <OffcanvasExample />

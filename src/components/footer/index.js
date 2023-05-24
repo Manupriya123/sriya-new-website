@@ -19,7 +19,7 @@ const MainFooter = () => {
                 <button className="footer-btn">Request Pilot</button>
               </a>
               <a href="https://info.sriya.ai/sale/saleform/">
-                <button className="footer-btn">Quote Me</button>
+                <button className="footer-btn">Use Case Builder</button>
               </a>
             </div>
           </div>

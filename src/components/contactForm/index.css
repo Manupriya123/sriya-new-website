@@ -94,6 +94,7 @@
     border-radius: 10px;
     border: 1px solid var(--border-color);
     padding: var(--input-padding);
+    position: relative;
 }
 
 .input-item-container input, .input-item-container textarea, .field-gap button{
@@ -128,6 +129,7 @@
     color: red;
     display: flex;
     font-size: 14px;
+    position:absolute;
 }
 
 .thank-you-form{

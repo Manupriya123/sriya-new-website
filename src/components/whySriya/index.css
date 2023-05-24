@@ -1,0 +1,55 @@
+.why-sriya-main-container {
+  background-color: #ececec;
+}
+
+.why-inner-container {
+  padding-top: 1%;
+}
+
+.why-heading {
+  color: #00263e;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.why-content {
+  font-size: 16px;
+}
+
+.why-container {
+  display: flex;
+  color: #014f86;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.why-img .MuiSvgIcon-root {
+  font-size: 40px;
+}
+
+.why-pointer-heading {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.why-pointer {
+  color: #000;
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .why-container {
+    flex-direction: column;
+  }
+
+  .why-img{
+    padding-bottom: 2rem;
+  }
+
+  .why-pointer-heading {
+    margin: 0;
+  }
+}

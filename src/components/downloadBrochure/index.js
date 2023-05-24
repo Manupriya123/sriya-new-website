@@ -127,4 +127,8 @@ const DownloadBrochure = () => {
   );
 };
 
+<<<<<<< HEAD
 export default DownloadBrochure;
+=======
+export default DownloadBrochure;
+>>>>>>> 66ffede385d8986aa09863d659e7c8a79eaacd9b

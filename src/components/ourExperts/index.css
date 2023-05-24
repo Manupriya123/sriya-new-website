@@ -1,0 +1,32 @@
+.expert-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+  width: 200px;
+}
+
+.our-expert-main-container {
+  background-color: #013a63;
+  padding: 2rem;
+  margin-bottom: 2%;
+}
+
+.our-expert-inner-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.expert-para {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) { 
+    .our-expert-inner-container {
+        flex-direction: column;
+        gap:0 ;
+    }
+}
