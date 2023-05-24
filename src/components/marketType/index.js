@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./index.css";
 import SearchIcon from "@mui/icons-material/Search";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const MarketTypes = ({ props }) => {
   const [searchTerm, setSearchTerm] = useState("");
+  const params = useParams()
+  console.log("params : ",params)
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
@@ -31,9 +33,10 @@ const MarketTypes = ({ props }) => {
       <div>
         <div className="market-item container_wrapper">
           {filteredData.map((item, index) => (
+            
             <div className="items-container">
               <img src={item.img} />
-              <Link to="">
+              <Link to={`/markets/${item.title.toLowerCase().replace(/\s+/g, '-')}/`}>
                 <h2 key={index}>{item.title}</h2>
               </Link>
             </div>
