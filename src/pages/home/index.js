@@ -8,6 +8,7 @@ import DrSay from "../../components/srinivasSay";
 import WhySriya from "../../components/whySriya";
 import OurExperts from "../../components/ourExperts";
 import SriyaThought from "../../components/sriyaThought";
+import ComparePlans from "../../components/comparePlans";
 const Home = () => {
   let whatData = {
     heading: "What We Do",
@@ -39,6 +40,7 @@ const Home = () => {
       <DrSay props={drSay} />
       <OurExperts props={expertSay} />
       <SriyaThought props={sriyaThought} />
+      <ComparePlans/>
       <DownloadBrochure />
       <MainFooter />
     </div>
