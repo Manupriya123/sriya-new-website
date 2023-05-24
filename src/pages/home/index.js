@@ -6,6 +6,7 @@ import MainFooter from "../../components/footer";
 import DownloadBrochure from "../../components/downloadBrochure";
 import DrSay from "../../components/srinivasSay";
 import WhySriya from "../../components/whySriya";
+import OurExperts from "../../components/ourExperts";
 const Home = () => {
   let whatData = {
     heading: "What We Do",
@@ -18,13 +19,19 @@ const Home = () => {
       "Traditional AI-ML fails to solve complex problems with precision, i.e., 75 %, but   Sriya-SXI is > 98% .",
     para: "Srinivas Kilambi, Ph.D",
   };
+
+  let expertSay = {
+    content:
+      "International recognized group of professionals from data scientists to awarding winning PhDs with the mission to educate, communicate and democratize AI-ML.",
+  };
   return (
     <div>
       <Header />
       <HomeBanner />
       <WhatWeDo props={whatData} />
-      <WhySriya/>
+      <WhySriya />
       <DrSay props={drSay} />
+      {/* <OurExperts props={expertSay} /> */}
       <DownloadBrochure />
       <MainFooter />
     </div>

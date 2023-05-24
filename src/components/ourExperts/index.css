@@ -1,0 +1,19 @@
+.expert-heading{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+}
+
+.our-expert-inner-container{
+    border: 1px solid #012A4A ;
+    border-radius: 5px;
+    background-color:#012A4A ;
+    display: flex;
+    align-items: center;
+}
+
+.expert-para{
+    color: #fff;
+    font-size: 14px;
+}
