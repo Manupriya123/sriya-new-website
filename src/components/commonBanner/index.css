@@ -1,0 +1,24 @@
+.common-banner-outer-container {
+  background-color: #013a63;
+}
+
+.comman-banner-inner-container {
+  padding: 3rem;
+}
+
+.common-banner-heading,
+.common-banner-sub-heading {
+  color: #fff;
+  margin: 0;
+}
+
+.common-banner-heading{
+    font-size: 35px;
+}
+
+.common-banner-sub-heading {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
