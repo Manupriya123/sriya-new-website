@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import SearchIcon from "@mui/icons-material/Search";
+import { Link } from "react-router-dom";
 
 const MarketTypes = ({ props }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -32,7 +33,9 @@ const MarketTypes = ({ props }) => {
           {filteredData.map((item, index) => (
             <div className="items-container">
               <img src={item.img} />
-              <h2 key={index}>{item.title}</h2>
+              <Link to="">
+                <h2 key={index}>{item.title}</h2>
+              </Link>
             </div>
           ))}
         </div>
