@@ -32,7 +32,7 @@
 .banner-btn-container{
     display: flex;
     justify-content: space-between;
-    gap: 50rem;
+    width:100%;
 }
 
 .btn-container{
@@ -65,6 +65,10 @@
     .banner-btn-container{
         gap: 3rem;
         flex-direction: column;
+    }
+
+    .pilot-btn{
+        width: 100%;
     }
 
     /* .banner-heading */

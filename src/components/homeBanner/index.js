@@ -1,10 +1,11 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./index.css";
 import ContactForm from "../contactForm";
 const HomeBanner = () => {
   const [showComponent, setShowComponent] = useState(false);
 
   const handleButtonClick = () => {
+    console.log("Button clicked");
     setShowComponent(true);
   };
   return (
@@ -20,6 +21,7 @@ const HomeBanner = () => {
         <p className="banner-third-heading">
           Experience the power of Sriya-ML<sup>2</sup>
         </p>
+
         <div className="banner-btn-container">
           <button
             onClick={handleButtonClick}

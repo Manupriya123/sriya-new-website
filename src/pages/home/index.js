@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/header";
 import HomeBanner from "../../components/homeBanner";
 import WhatWeDo from "../../components/whatWeDo";
@@ -9,7 +9,14 @@ import WhySriya from "../../components/whySriya";
 import OurExperts from "../../components/ourExperts";
 import SriyaThought from "../../components/sriyaThought";
 import ComparePlans from "../../components/comparePlans";
+import { useLocation } from 'react-router-dom';
+
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    document.title = 'Sriya AI LLC- AI ANYTIME ANYWHERE'; // Set the desired title for the home page
+  }, []);
   let whatData = {
     heading: "What We Do",
     content:
