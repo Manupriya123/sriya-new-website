@@ -17,7 +17,6 @@ const Home = () => {
       <Header />
       <HomeBanner />
       <WhatWeDo props={whatData} />
-
       <DownloadBrochure />
       <MainFooter />
     </div>
