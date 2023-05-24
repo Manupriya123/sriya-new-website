@@ -1,6 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
 import "./index.css";
+import ContactForm from "../contactForm";
 const HomeBanner = () => {
+  const [showComponent, setShowComponent] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowComponent(true);
+  };
   return (
     <div className="banner-container">
       <div className="banner-img-container container_wrapper">
@@ -15,9 +21,14 @@ const HomeBanner = () => {
           Experience the power of Sriya-ML<sup>2</sup>
         </p>
         <div className="banner-btn-container">
-          <a href="">
-            <button className="btn-container contact-btn">Contact</button>
-          </a>
+          <button
+            onClick={handleButtonClick}
+            className="btn-container contact-btn"
+          >
+            Contact
+          </button>
+          {showComponent && <ContactForm />}
+
           <a href="https://info.sriya.ai/discoveryapp/discoverform/">
             <button className="btn-container pilot-btn">Request Pilot</button>
           </a>

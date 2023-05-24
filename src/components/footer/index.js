@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./index.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
@@ -14,7 +14,7 @@ const MainFooter = () => {
             <div>
               <img src="https://ml1ygrea7hcj.i.optimole.com/w:94/h:36/q:mauto/f:avif/https://sriya.ai/wp-content/uploads/2023/04/White-logo-no-background-1.png" />
             </div>
-            <div class="footer-btn-container">
+            <div className="footer-btn-container">
               <a href="https://info.sriya.ai/discoveryapp/discoverform/">
                 <button className="footer-btn">Request Pilot</button>
               </a>
