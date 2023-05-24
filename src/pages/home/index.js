@@ -7,6 +7,7 @@ import DownloadBrochure from "../../components/downloadBrochure";
 import DrSay from "../../components/srinivasSay";
 import WhySriya from "../../components/whySriya";
 import OurExperts from "../../components/ourExperts";
+import SriyaThought from "../../components/sriyaThought";
 const Home = () => {
   let whatData = {
     heading: "What We Do",
@@ -24,6 +25,11 @@ const Home = () => {
     content:
       "International recognized group of professionals from data scientists to awarding winning PhDs with the mission to educate, communicate and democratize AI-ML.",
   };
+
+  let sriyaThought = {
+    content:
+      "Sriya-ML utilizes standard machine learning algorithms, whereas Sriya-SXI utilizes proprietary precision learning indexing algorithms offering 20-40% accuracy improvement with 100% precision",
+  };
   return (
     <div>
       <Header />
@@ -31,7 +37,8 @@ const Home = () => {
       <WhatWeDo props={whatData} />
       <WhySriya />
       <DrSay props={drSay} />
-      {/* <OurExperts props={expertSay} /> */}
+      <OurExperts props={expertSay} />
+      <SriyaThought props={sriyaThought} />
       <DownloadBrochure />
       <MainFooter />
     </div>

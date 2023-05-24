@@ -147,14 +147,15 @@ function ResponsiveDrawer(props) {
         }}
       >
         <Toolbar
-        // style={{
-        //   display: "flex",
-        //   justifyContent: "space-between",
-        // }}
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          flexDirection: "row-reverse"
+        }}
         >
           <IconButton
             aria-label="open drawer"
-            edge="start"
+            edge="end"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
@@ -180,6 +181,7 @@ function ResponsiveDrawer(props) {
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Drawer
           container={container}
+          anchor="right"
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
