@@ -1,0 +1,46 @@
+.slider-main {
+  padding-top: 30px;
+  background-color: #001d3a;
+  color: white;
+  justify-content: space-between;
+}
+.carousel .slider-wrapper {
+  width: 90%;
+}
+
+.carousel .thumb {
+  display: none;
+}
+
+.slider-content {
+  border-radius: 10px;
+  background-color: #fff;
+  color: black;
+  height: 150px;
+  padding: 8%;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-status {
+  display: none;
+}
+.control-dots {
+  display: none;
+}
+.control-arrow {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .slider-content {
+    background-color: #fff;
+    border-radius: 10px;
+    color: black;
+    height: 200px;
+    padding: 8%;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+  }
+}

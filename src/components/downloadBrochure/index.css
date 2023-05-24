@@ -2,6 +2,7 @@
   font-size: 25px;
   font-weight: 700;
   color: #192a56;
+  padding-top: 10px;
 }
 
 .download-sec-heading {
@@ -61,26 +62,25 @@
   font-size: 14px;
 }
 
-.download-field-gap{
-    margin: 1em 0;
+.download-field-gap {
+  margin: 1em 0;
 }
 
-@media screen and (max-width: 768px) { 
-    .download-container{
-        flex-direction: column;
-        margin: unset;
-    }
+@media screen and (max-width: 768px) {
+  .download-container {
+    flex-direction: column;
+    margin: unset;
+  }
 
-    .download-field-gap  {
-        width: 100%;
-    }
+  .download-field-gap {
+    width: 100%;
+  }
 
-    .download-btn {
-        justify-content: center;
-    }
+  .download-btn {
+    justify-content: center;
+  }
 
-    .download-sec-heading{
-        font-size: 20px !important;
-    }
-    
+  .download-sec-heading {
+    font-size: 20px !important;
+  }
 }

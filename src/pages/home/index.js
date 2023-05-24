@@ -2,9 +2,9 @@ import React from "react";
 import Header from "../../components/header";
 import HomeBanner from "../../components/homeBanner";
 import WhatWeDo from "../../components/whatWeDo";
-
 import MainFooter from "../../components/footer";
 import DownloadBrochure from "../../components/downloadBrochure";
+import Slider from "../../components/carousel/Slider";
 
 const Home = () => {
   let whatData = {
@@ -17,6 +17,7 @@ const Home = () => {
       <Header />
       <HomeBanner />
       <WhatWeDo props={whatData} />
+      <Slider />
       <DownloadBrochure />
       <MainFooter />
     </div>
